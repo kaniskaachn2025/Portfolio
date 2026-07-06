@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>B.S. Kaniskaa — AI &amp; ML Student</title>
+<meta name="description" content="Portfolio of B.S. Kaniskaa, B.Tech Artificial Intelligence &amp; Machine Learning student at Jeppiaar Engineering College, Chennai.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="bg-grid" aria-hidden="true"></div>
+
+<header class="nav">
+  <a class="nav__brand" href="#top">B.S. Kaniskaa</a>
+  <nav class="nav__links">
+    <a href="#about">Profile</a>
+    <a href="#skills">Skills</a>
+    <a href="#project">Project</a>
+    <a href="#credentials">Credentials</a>
+    <a href="#contact">Contact</a>
+  </nav>
+  <a class="nav__cta" href="assets/BS_Kaniskaa_Resume.pdf" download>Resume ↓</a>
+</header>
+
+<main id="top">
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="hero__inner">
+      <p class="eyebrow">B.Tech Artificial Intelligence &amp; Machine Learning</p>
+      <h1 class="hero__title">B.S. Kaniskaa</h1>
+      <p class="hero__tagline">Second-year engineering student building a foundation in AI and cloud infrastructure — one deployed system at a time.</p>
+
+      <div class="terminal" role="img" aria-label="Terminal showing student status">
+        <div class="terminal__bar">
+          <span class="dot dot--r"></span><span class="dot dot--y"></span><span class="dot dot--g"></span>
+          <span class="terminal__path">kaniskaa@jeppiaar:~</span>
+        </div>
+        <div class="terminal__body">
+          <p class="line"><span class="prompt">$</span> whoami</p>
+          <p class="out">B.S. Kaniskaa — AI &amp; ML student, Chennai</p>
+          <p class="line"><span class="prompt">$</span> status --seeking</p>
+          <p class="out out--accent">Open to internship opportunities<span class="cursor">▌</span></p>
+        </div>
+      </div>
+
+      <div class="hero__actions">
+        <a class="btn btn--primary" href="mailto:kaniskaachn2025@gmail.com">Email me</a>
+        <a class="btn btn--ghost" href="assets/BS_Kaniskaa_Resume.pdf" download>Download résumé</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROFILE -->
+  <section id="about" class="section">
+    <p class="eyebrow">Profile</p>
+    <h2 class="section__title">About</h2>
+    <p class="prose">
+      I'm an enthusiastic second-year B.Tech student specializing in Artificial Intelligence and Machine Learning
+      at Jeppiaar Engineering College, Chennai. I'm drawn to the intersection of AI and cloud computing — how
+      models get trained is one thing, but how they actually run, scale, and stay online is what pulls me in.
+      Outside coursework, I've been getting hands-on with AWS, learning to provision and secure infrastructure
+      rather than just read about it. I'm currently looking for an internship where I can put that curiosity
+      to work on real, production-facing problems.
+    </p>
+  </section>
+
+  <!-- SKILLS -->
+  <section id="skills" class="section">
+    <p class="eyebrow">Skills</p>
+    <h2 class="section__title">Toolkit</h2>
+    <div class="tags">
+      <span class="tag">Python</span>
+      <span class="tag">C Programming</span>
+      <span class="tag">Machine Learning</span>
+      <span class="tag">AWS · EC2</span>
+      <span class="tag">Cloud Computing</span>
+      <span class="tag">MS Office</span>
+      <span class="tag">Communication</span>
+    </div>
+  </section>
+
+  <!-- EDUCATION -->
+  <section id="education" class="section">
+    <p class="eyebrow">Education</p>
+    <h2 class="section__title">Currently studying</h2>
+    <div class="card card--row">
+      <div class="card__mark" aria-hidden="true">
+        <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M24 6L45 15L24 24L3 15L24 6Z" stroke="currentColor" stroke-width="2.2" stroke-linejoin="round"/>
+          <path d="M12 20V32C12 32 16 37 24 37C32 37 36 32 36 32V20" stroke="currentColor" stroke-width="2.2" stroke-linejoin="round"/>
+          <path d="M42 15V27" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"/>
+        </svg>
+      </div>
+      <div>
+        <h3 class="card__title">B.Tech, Artificial Intelligence &amp; Machine Learning</h3>
+        <p class="card__meta">Jeppiaar Engineering College, Chennai · Second Year, in progress</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROJECT -->
+  <section id="project" class="section">
+    <p class="eyebrow">Project</p>
+    <h2 class="section__title">AWS Cloud Deployment</h2>
+    <p class="prose prose--tight">
+      A hands-on exercise in standing up and securing a live web server, rather than just simulating one.
+    </p>
+
+    <div class="terminal terminal--wide">
+      <div class="terminal__bar">
+        <span class="dot dot--r"></span><span class="dot dot--y"></span><span class="dot dot--g"></span>
+        <span class="terminal__path">aws-cloud-project</span>
+      </div>
+      <div class="terminal__body">
+        <p class="line"><span class="prompt">$</span> aws ec2 run-instances --image-id ami-linux --instance-type t2.micro</p>
+        <p class="out">✓ EC2 instance launched</p>
+        <p class="line"><span class="prompt">$</span> configure security-group --allow http,ssh</p>
+        <p class="out">✓ Security group configured</p>
+        <p class="line"><span class="prompt">$</span> deploy static-site /var/www/html</p>
+        <p class="out out--accent">✓ Web server live on AWS Cloud<span class="cursor">▌</span></p>
+      </div>
+    </div>
+
+    <ul class="checklist">
+      <li>Built and deployed a web server on an EC2 instance in AWS Cloud.</li>
+    </ul>
+  </section>
+
+  <!-- CREDENTIALS -->
+  <section id="credentials" class="section">
+    <p class="eyebrow">Credentials</p>
+    <h2 class="section__title">Certifications &amp; Achievements</h2>
+
+    <div class="grid-2">
+      <div class="card">
+        <h3 class="card__label">Certification</h3>
+        <p class="card__item">Claude 101 Certification — Completed</p>
+      </div>
+      <div class="card">
+        <h3 class="card__label">Achievements</h3>
+        <p class="card__item">First Prize — 100 Metres Running Competition (School)</p>
+        <p class="card__item">First Prize — School Quiz Competition</p>
+        <p class="card__item">First Prize — School Handwriting Competition</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact" class="section section--contact">
+    <p class="eyebrow">Contact</p>
+    <h2 class="section__title">Let's talk</h2>
+    <p class="prose prose--tight">Open to internship opportunities in AI, ML, and cloud infrastructure.</p>
+    <div class="contact-row">
+      <a class="contact-item" href="mailto:kaniskaachn2025@gmail.com">kaniskaachn2025@gmail.com</a>
+      <span class="contact-item">+91 91507 64360</span>
+      <span class="contact-item">Chennai, Tamil Nadu</span>
+    </div>
+  </section>
+
+</main>
+
+<footer class="footer">
+  <p>Languages: English, Tamil · Interests: Reading, Learning AI, Running</p>
+  <p>&copy; <span id="year"></span> B.S. Kaniskaa</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
